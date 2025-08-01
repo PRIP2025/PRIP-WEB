@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Life - PRIP</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --text-light: #7f8c8d;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+        }
+        
+        .intro {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+        
+        .plans-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .plan-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            flex: 1;
+            min-width: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .plan-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .plan-price {
+            font-size: 2rem;
+            color: var(--accent-color);
+            text-align: center;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .plan-features {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .plan-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .highlight-section {
+            background-color: var(--light-color);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .example-box {
+            background: white;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        .disclaimer {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .plans-container {
+                flex-direction: column;
+            }
+            
+            .plan-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Capital Life</h1>
+            <p>Construye tu futuro con disciplina financiera</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section>
+            <div class="intro">
+                <p>Capital Life es un plan diseñado para personas que buscan crear una fuente de retiro segura mediante aportes constantes y disciplina financiera. Parte del <strong>Plan de Inversión Privada (PRIP)</strong>, una alternativa estratégica para construir tu futuro financiero en 3 a 5 años.</p>
+            </div>
+            
+            <h2>Características Principales</h2>
+            <ul>
+                <li><strong>Enfoque en crecimiento sostenido</strong> a largo plazo</li>
+                <li>Sistema de <strong>aportes mensuales</strong> para fomentar la disciplina financiera</li>
+                <li><strong>Gestión profesional</strong> de tu capital por expertos en mercados financieros</li>
+                <li>Ideal para quienes prefieren un enfoque <strong>conservador y constante</strong></li>
+                <li><strong>Reportes periódicos</strong> sobre el desempeño de tu inversión</li>
+                <li>Posibilidad de <strong>ajustar tu plan</strong> según tus circunstancias</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Planes Disponibles</h2>
+            <div class="plans-container">
+                <div class="plan-card">
+                    <h3 class="plan-title">Plan Start</h3>
+                    <div class="plan-price">$200 USD</div>
+                    <ul class="plan-features">
+                        <li><strong>Aporte mensual:</strong> $15 USD</li>
+                        <li><strong>Duración:</strong> 5 años</li>
+                        <li><strong>Enfoque:</strong> Crecimiento sostenido</li>
+                        <li><strong>Beneficio:</strong> Reportes periódicos y acompañamiento básico</li>
+                        <li>Ideal para iniciar tu camino hacia la libertad financiera</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card">
+                    <h3 class="plan-title">Plan Plus</h3>
+                    <div class="plan-price">$600 USD</div>
+                    <ul class="plan-features">
+                        <li><strong>Aporte mensual:</strong> $25 USD</li>
+                        <li><strong>Duración:</strong> 5 años</li>
+                        <li><strong>Enfoque:</strong> Aceleración controlada del capital</li>
+                        <li><strong>Beneficio:</strong> Estrategias optimizadas y seguimiento personalizado</li>
+                        <li>Para quienes buscan un crecimiento más acelerado</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card">
+                    <h3 class="plan-title">Plan Pro</h3>
+                    <div class="plan-price">$1,200 USD</div>
+                    <ul class="plan-features">
+                        <li><strong>Aporte mensual:</strong> $50 USD</li>
+                        <li><strong>Duración:</strong> 5 años</li>
+                        <li><strong>Enfoque:</strong> Alto rendimiento personalizado</li>
+                        <li><strong>Beneficio:</strong> Asesoría exclusiva y reportes detallados</li>
+                        <li>Para inversores comprometidos con su futuro financiero</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="highlight-section">
+            <h2>¿Por qué elegir Capital Life?</h2>
+            <p>Capital Life es parte de la filosofía PRIP: <strong>"Invierte hoy, disfruta mañana"</strong>. Un plan diseñado para ayudarte a construir, paso a paso, el futuro financiero que mereces.</p>
+            
+            <div class="example-box">
+                <h3>Ejemplo de Crecimiento (Plan Start)</h3>
+                <ul>
+                    <li><strong>Inversión inicial:</strong> $200 USD</li>
+                    <li><strong>Aporte mensual:</strong> $15 USD</li>
+                    <li><strong>Duración:</strong> 5 años (60 meses)</li>
+                    <li><strong>Rentabilidad estimada:</strong> Variable según mercado (promedio histórico 8% mensual)</li>
+                    <li><strong>Resultado estimado:</strong> Tu capital puede superar los $3,000 USD al finalizar el plazo</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="registro">
+            <h2>Comienza a construir tu libertad financiera</h2>
+            <p>Nuestro equipo está listo para ayudarte a elegir el plan que mejor se adapte a tus metas financieras.</p>
+            <!-- Aquí puedes agregar un formulario de contacto o registro -->
+            <p style="text-align: center;">
+                <a href="mailto:info@pripinversion.com" class="cta-button">Contáctanos</a>
+            </p>
+        </section>
+        
+        <p class="disclaimer">
+            *Rendimientos pasados no garantizan resultados futuros. Todas las inversiones conllevan riesgo.
+        </p>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>PRIP - Plan de Inversión Privado</p>
+            <p>© 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
